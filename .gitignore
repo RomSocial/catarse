@@ -20,3 +20,6 @@ db/structure.sql
 .sass-cache
 Cookbooks
 .vagrant
+# New 
+.idea/
+*.tmp
