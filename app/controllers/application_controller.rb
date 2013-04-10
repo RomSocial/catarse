@@ -21,7 +21,7 @@ class ApplicationController < ActionController::Base
 
   # TODO: Change this way to get the opendata
   before_filter do
-    @fb_admins = [567237711]
+    @fb_admins = [1040671984]
   end
 
   before_filter do
