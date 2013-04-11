@@ -50,8 +50,7 @@ html lang="#{I18n.locale}" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http:/
               li= link_to t('footer.links.faq'), 'http://suporte.catarse.me/', :target => '_blank'
               li= link_to t('footer.links.terms'), t('footer.links.terms_link')
               li= link_to t('footer.links.policy'), t('footer.links.policy_link')
-              li= link_to t('footer.links.contact'), "javascript:UserVoice.showPopupWidget({widget_key: '2DR84iOChCpBGJysVNe9lQ'});"
-
+              li= link_to t('footer.links.contact'), "javascript:UserVoice.push(['showLightbox', 'classic_widget', []]);"
           .opendata
             h3= t('footer.titles.opendata')
             ul
@@ -86,13 +85,4 @@ html lang="#{I18n.locale}" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http:/
               = submit_tag "#{t('newsletter_subscribe')}"
           .clearfix
     #logos
-      .multide
-        = link_to '#' do
-          = image_tag('catarse/multide_logo55x36.png', :target => '_blank', :alt => 'MULTIDE')
-      .comum
-        = link_to 'http://comum.cc', :target => '_blank' do
-          = image_tag('catarse/comum_logo127x27.png', :alt => 'COMUM')
-      .power
-        = link_to 'http://engage.is', :target => '_blank' do
-          = image_tag('catarse/power_logo200x43.png', :alt => 'POWER TO THE CROWD')
     = render '/layouts/uservoice'
