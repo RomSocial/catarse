@@ -24,3 +24,4 @@ Cookbooks
 .idea/
 *.tmp
 *.un~
+Gemfile.lock
